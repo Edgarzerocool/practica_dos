@@ -16,7 +16,9 @@ class JuegoState extends State<Juego> {
   List items = ["1","2"];
   @override
   Widget build(BuildContext context) {
-    int numeroSecreto = random.nextInt(nivel + 1);
+    int numeroSecreto = random.nextInt(nivel);
+    numeroSecreto ++;
+    print("el numero a encontrar es -------------------- $numeroSecreto");
     return Scaffold(
       appBar: AppBar(
         title: const Text("Juego"),
