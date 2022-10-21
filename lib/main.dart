@@ -53,13 +53,13 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Column(
                 children: [
                   TextField(
-                    decoration: InputDecoration(helperText: "ingrese su usuario"),
+                    decoration: const InputDecoration(helperText: "ingrese su usuario"),
                     onChanged: (value){
                       usarName = value;
                     },
                   ),
                   TextField(
-                    decoration: InputDecoration(helperText: "ingrese su pin"),
+                    decoration: const InputDecoration(helperText: "ingrese su pin"),
                     keyboardType: TextInputType.number,
                     maxLength: 6,
                     onChanged: (value){
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     onPressed: (){
                       validarLogin(usarName, pin, context);
                     },
-                    child: Text("INGRESAR"),
+                    child: const Text("INGRESAR"),
                   ),
                 ],
               ),
